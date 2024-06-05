@@ -18,6 +18,20 @@ Simulacra is designed to test and validate use cases for Next-gen Insider Risk M
 
 ### Why Simulacra?
 
-Simulacra is more than just a testing tool; it’s a paradigm shift in testing environments. By integrating Docker's powerful containerization with a mimic agent that executes predefined playbook payloads, Simulacra offers a unique blend of flexibility, efficiency, and user-focused design. Whether you're a developer looking for a scalable testing solution or an organization seeking to improve insider risk management and data loss prevention, Simulacra is designed to meet and exceed your expectations.
+Simulacra is more than just a testing tool; itâ€™s a paradigm shift in testing environments. By integrating Docker's powerful containerization with a mimic agent that executes predefined playbook payloads, Simulacra offers a unique blend of flexibility, efficiency, and user-focused design. Whether you're a developer looking for a scalable testing solution or an organization seeking to improve insider risk management and data loss prevention, Simulacra is designed to meet and exceed your expectations.
 
 Join the Simulacra community and be a part of the future of adaptive, containerized testing environments. Contribute, collaborate, and experience the next evolution in testing technology.
+
+### Architecture
+
+```mermaid
+graph LR
+    A[User] -->|Sends Playbook| B[HTTP Server]
+    B -->|Stores Playbook| C[PostgreSQL Database]
+    B -->|Selects Agent| D[Mimic Agent]
+    D -->|Fetches Playbook| C[PostgreSQL Database]
+    D -->|Executes Playbook Actions| E[Simulated Environment]
+    E -->|Sends Results| D
+    D -->|Updates Execution Status| C[PostgreSQL Database]
+    B -->|Fetches Status| C[PostgreSQL Database]
+    B -->|Returns Results| A[User]
