@@ -1,0 +1,16 @@
+name: Example Playbook
+actions:
+  - type: mouse_move
+    x: 100
+    y: 200
+    delay: 2
+  - type: key_press
+    key: "h"
+    delay: 1
+  - type: network_request
+    url: "https://jsonplaceholder.typicode.com/posts/1"
+    method: "GET"
+    delay: 3
+  - type: key_press
+    key: "i"
+    delay: 1
