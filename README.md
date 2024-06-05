@@ -1,4 +1,16 @@
 ## Simulacra
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![Testing](https://img.shields.io/badge/Testing-6DB33F?style=for-the-badge&logo=testing-library&logoColor=white)
+![Automation](https://img.shields.io/badge/Automation-6A1B9A?style=for-the-badge&logo=automation&logoColor=white)
+![Security](https://img.shields.io/badge/Security-4CAF50?style=for-the-badge&logo=security&logoColor=white)
+![Scalability](https://img.shields.io/badge/Scalability-FFD700?style=for-the-badge&logo=scalability&logoColor=black)
+![CI/CD](https://img.shields.io/badge/CI/CD-007ACC?style=for-the-badge&logo=ci-cd&logoColor=white)
+![YAML](https://img.shields.io/badge/YAML-CB171E?style=for-the-badge&logo=yaml&logoColor=white)
+
+### Additional Tags
 
 **Simulacra** is an innovative testing tool utilizing Docker images equipped with sophisticated mimic agents designed to execute predefined behaviors. Drawing inspiration from the concept of simulacra, this project combines the flexibility of Docker with precise behavior execution to provide a unique and efficient testing environment.
 
